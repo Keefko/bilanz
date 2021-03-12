@@ -1,0 +1,168 @@
+
+<div class="row d-flex justify-content-center">
+  <div class="col-lg-10">
+      <div class="contact">
+        <h1 class="mt-4">Kontakt</h1>
+        <div class="item-normal mt-2">
+          <form [formGroup]="form" (submit)="submit()">
+            <div class="row">
+              <input type="hidden" formControlName="id">
+              <div class="col-lg-6 col-md-12">
+                <div class="form-group">
+                  <label for="title">Nadpis</label>
+                  <input type="text" class="form-control" id="title" formControlName="title" required
+                         placeholder="Nadpis" />
+                  <div *ngIf="f.title.touched && f.title.invalid" class="alert alert-danger mt-2">
+              <span *ngIf="f.title.errors?.required">
+                Nadpis musí byť vyplnený
+              </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-12">
+                <div class="form-group">
+                  <label for="img">Obrázok</label>
+                  <input type="file" class="form-control" id="img" formControlName="img" required/>
+                  <div *ngIf="f.img.touched && f.img.invalid" class="alert alert-danger mt-2">
+              <span *ngIf="f.img.errors?.required">
+                Obrázok musí byť vyplnený
+              </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-12">
+                <div class="form-group">
+                  <label for="address">Adresa</label>
+                  <ckeditor class="form-control" id="address" formControlName="address" required [editor]="editor"
+                            data="<textarea></textarea>"></ckeditor>
+
+                  <div *ngIf="f.address.touched && f.address.invalid" class="alert alert-danger mt-2">
+              <span *ngIf="f.address.errors?.required">
+                Adresa musí byť vyplnená
+              </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-12">
+                <div class="form-group">
+                  <label for="bank">IBAN</label>
+                  <textarea class="form-control" id="bank" formControlName="bank" required
+                            placeholder="Iban"></textarea>
+                  <div *ngIf="f.bank.touched && f.bank.invalid" class="alert alert-danger mt-2">
+              <span *ngIf="f.bank.errors?.required">
+                Iban musí byť vyplnený
+              </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-12">
+                <div class="form-group">
+                  <label for="phone">Telefón</label>
+                  <input type="text" class="form-control" id="phone" formControlName="phone" required
+                         placeholder="Telefón" />
+                  <div *ngIf="f.phone.touched && f.phone.invalid" class="alert alert-danger mt-2">
+              <span *ngIf="f.phone.errors?.required">
+                Telefón musí byť vyplnený
+              </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-12">
+                <div class="form-group">
+                  <label for="mail">E-mail</label>
+                  <input type="text" class="form-control" id="mail" formControlName="mail" required
+                         placeholder="E-mail" />
+                  <div *ngIf="f.mail.touched && f.mail.invalid" class="alert alert-danger mt-2">
+              <span *ngIf="f.mail.errors?.required">
+                E-mail musí byť vyplnený
+              </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-12">
+                <div class="form-group">
+                  <label for="info">Fakturačné údaje</label>
+                  <ckeditor [editor]="editor" class="form-control" id="info" formControlName="info" required
+                            placeholder="Fakturačné údaje" data="<textarea></textarea>"></ckeditor>
+                  <div *ngIf="f.info.touched && f.info.invalid" class="alert alert-danger mt-2">
+                      <span *ngIf="f.info.errors?.required">
+                        Fakturačné údaje musia byť vyplnené
+                      </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-12">
+                <div class="form-group">
+                  <label for="map">Mapa</label>
+                  <input type="text" class="form-control" id="map" formControlName="map"
+                         placeholder="Mapa" />
+                </div>
+              </div>
+            </div>
+            <input type="submit" class="btn btn-custom btn-custom-blue-border" value="Upraviť">
+          </form>
+      </div>
+
+    </div>
+      <div class="faq mt-5">
+        <h1 class="mt-4">Často kladené otázky</h1>
+        <div class="item-normal mt-2">
+          <div class="table-responsive mt-3">
+            <table class="table table-hover">
+              <thead>
+              <tr>
+                <th scope="col">Otázka</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+              </tr>
+              </thead>
+              <tbody class="bg-white">
+                <ng-container *ngFor="let faq of faqs">
+                  <tr>
+                    <td (click)="show(faq.id)">{{faq.title}}</td>
+                    <td></td>
+                    <td><button class="btn btn-danger" (click)="deleteFaq(faq.id)">Vymazať</button></td>
+                  </tr>
+                  <tr class="panel display-none" id="#item{{faq.id}}">
+                    <td colspan="6">
+                        <form [formGroup]="formFaqUpdate" (submit)="update()">
+                          <div class="form-group">
+                            <label for="question">Otázka</label>
+                            <input type="text" class="form-control" id="question" formControlName="title" required
+                                          placeholder="Otázka" value="{{faq.title}}"/>
+                            <div *ngIf="fu.title.touched && fu.title.invalid" class="alert alert-danger mt-2">
+                              <span *ngIf="fu.title.errors?.required">
+                                Otázka musí byť vyplnená
+                              </span>
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="answear">Odpoveď</label>
+                            <input type="text" class="form-control" id="answear" formControlName="text" required
+                                   placeholder="Odpoveď" value="{{faq.text}}"/>
+                            <div *ngIf="fu.text.touched && fu.text.invalid" class="alert alert-danger mt-2">
+                              <span *ngIf="fu.text.errors?.required">
+                                Odpoveď musí byť vyplnená
+                              </span>
+                            </div>
+                          </div>
+                        </form>
+                    </td>
+                  </tr>
+                </ng-container>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+

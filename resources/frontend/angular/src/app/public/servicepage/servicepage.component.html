@@ -1,0 +1,129 @@
+<app-pageheader [page]="service"></app-pageheader>
+
+<section class="mt-5 mb-5">
+    <ng-container *ngIf="service?.journey == true">
+      <section id="journey" class="mt-4">
+        <div class="container">
+          <div class="heading">
+            <h1>Ako postupovať?</h1>
+          </div>
+
+          <div class="row mt-5">
+            <ng-container  *ngFor="let journey of journeys; let i=index">
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="journey-box">
+                  <div class="row">
+                    <div class="col-2">
+                      <div class="journey-number">
+                        <h1>{{i+1}}</h1>
+                      </div>
+                    </div>
+                    <div class="col-10">
+                      <div class="journey-text">
+                        <h3>{{journeys[i].title}}</h3>
+                        <p>{{journeys[i].text}}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </section>
+    </ng-container>
+
+    <section id="service">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-9">
+            <p class="text-center">
+              {{service?.text}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <ng-container *ngIf="service?.calc == true">
+      <section id="calc">
+        <div class="container">
+          <div class="row calc-section">
+            <div class="col-lg-6 col-md-12 calc-blue">
+              <h1>Zaujíma vás, akú sumu môžete získať
+                pri vrátení dane?</h1>
+              <div class="form-group mt-3">
+                <label for="country">KRAJINA PRE REFUNDÁCIU</label>
+                <br/>
+                <select name="countries" class="form-control" id="country">
+                  <option value="cz">Česko</option>
+                  <option value="uk">Ukrajina</option>
+                  <option value="pl">Poľsko</option>
+                  <option value="de">Nemecko</option>
+                </select>
+              </div>
+
+              <div class="form-group mt-4">
+                <label>ČISTÁ ČIASTKA ZA PALIVO:</label>
+                <input type="number" class="form-control" placeholder="0">
+              </div>
+
+              <div class="form-group mt-4">
+                <label>ČISTÁ ČIASTKA MÝTNEHO:</label>
+                <input type="number" class="form-control" placeholder="0">
+              </div>
+
+            </div>
+            <div class="col-lg-6 col-md-12 calc-text">
+              <h2>REFUNDOVANÁ ČIASTKA:</h2>
+              <h3 class="mt-5">1200 €</h3>
+              <div class="form-group mt-4">
+                <select name="currencies" id="currencies">
+                  <option value="none" selected>Prevod na inu menu</option>
+                  <option value="kc">Česká koruna</option>
+                  <option value="dkk">Dánska koruna</option>
+                  <option value="gbd">libra</option>
+                </select>
+              </div>
+              <ul class="mt-5">
+                <li>Minimálna čiastka pre podanie žiadosti: kvartálna žiadosť 400 EUR DPH / ročná žiadosť 50 EUR DPH (alebo ekvivalent lokálnej meny)</li>
+                <li>Minimálna čiastka pre podanie žiadosti: kvartálna žiadosť 400 EUR DPH / ročná žiadosť 50 EUR DPH (alebo ekvivalent lokálnej meny)</li>
+                <li>Minimálna čiastka pre podanie žiadosti: kvartálna žiadosť 400 EUR DPH / ročná žiadosť 50 EUR DPH (alebo ekvivalent lokálnej meny)</li>
+              </ul>
+              <div class="mx-auto mt-2">
+                <button class="btn btn-custom btn-custom-blue-border">Kontaktujte nás</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </ng-container>
+
+
+    <ng-container *ngIf="service?.others == true">
+      <section id="others" class="mt-4">
+        <div class="container">
+          <div class="heading mb-5">
+            <h1>Ostatné služby</h1>
+          </div>
+            <owl-carousel-o [options]="customOptions">
+              <ng-container *ngFor="let service of others">
+                <ng-template carouselSlide>
+                  <div class="slide">
+                    <div class="card-body">
+                      <i class="{{service?.icon}}"></i>
+                      <h5 class="card-title text-uppercase mt-4">{{service?.title}}</h5>
+                      <p class="card-text">{{service?.text | slice:0:150}}</p>
+                      <a routerLink="{{service?.button_url}}" class="mt-4">{{service?.button_text}}</a>
+                    </div>
+                  </div>
+                </ng-template>
+              </ng-container>
+            </owl-carousel-o>
+        </div>
+      </section>
+    </ng-container>
+</section>
+<app-footer></app-footer>

@@ -1,0 +1,109 @@
+
+#navbar{
+  padding: 1rem;
+  transition:all 0.8s ease;
+  height: 100px;
+}
+
+#navbar .navbar-brand{
+  padding-left: 2rem;
+  color: var(--main);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+
+#navbar ul {
+  padding-right: 2rem;
+}
+
+#navbar .nav-item .nav-link{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all 0.8s ease;
+}
+
+#navbar ul > li a {
+  color: var(--heading);
+}
+
+#navbar ul > li a:hover,
+#navbar ul > li a.active{
+  color: var(--main);
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#navbar button.navbar-toggler {
+  cursor: pointer;
+  padding: 0.15em 0.35em;
+}
+
+
+#navbar .hamburger {
+  margin-right: 1.2em;
+}
+
+#navbar .navbar-toggler-inner,
+#navbar .navbar-toggler-inner::before,
+#navbar .navbar-toggler-inner::after{
+  transition: 0.3s;
+  background-color: black;
+  width: 1em;
+  height: 0.16em;
+  position: absolute;
+}
+
+
+#navbar .navbar-toggler-inner::before{
+  content: "";
+  display: block;
+  top: -0.3em;
+}
+
+#navbar .navbar-toggler-inner::after{
+  content: "";
+  display: block;
+  bottom: -0.3em;
+}
+
+
+#navbar .navbar-toggler-inner.active{
+  transition: 0.3s;
+  transform: rotate(45deg);
+}
+
+#navbar .navbar-toggler-inner.active::before{
+  top:0;
+  opacity: 0;
+}
+
+#navbar .navbar-toggler-inner.active::after{
+  bottom: 0;
+  transform: rotate(-90deg);
+}
+
+#navbar .dropdown ul{
+  border-radius: 0.2rem;
+  padding-right: 0;
+}
+
+#navbar .dropdown ul li a {
+  padding: 8px;
+  color: var(--heading);
+}
+
+#navbar .dropdown ul li a:hover {
+  background-color: var(--main);
+  color: white;
+}

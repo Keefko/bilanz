@@ -11,33 +11,29 @@ class ServiceController extends Controller
 
     public function index()
     {
-        $services = Service::all();
-        return response($services, Response::HTTP_OK);
+        return response(Service::all(), Response::HTTP_OK);
     }
 
 
     public function store(Request $request)
     {
-        $service = Service::create($request->only('icon', 'title', 'text', 'img', 'button_text', 'button_url'));
-        return \response($service, Response::HTTP_CREATED);
+        return \response(Service::create($request->all()), Response::HTTP_CREATED);
     }
 
+    public function name($slug){
+        return \response(Service::where('slug', $slug)->firstOrFail(), Response::HTTP_OK);
+    }
 
-    public function show($id)
+    public function show($slug)
     {
-        $service = Service::find($id);
-        if(!$service){
-            return \response('Služba sa nenašla', Response::HTTP_NOT_FOUND);
-        }
-
-        return \response($service, Response::HTTP_OK);
+        return \response(Service::where('slug', $slug)->firstOrFail(), Response::HTTP_OK);
     }
 
 
     public function update(Request $request, $id)
     {
-        $service = Service::find($id);
-        $service->update($request->only('icon', 'title', 'text', 'img', 'button_text', 'button_url'));
+        $service = Service::findOrFail($id);
+        $service->update($request->all());
 
         return \response($service, Response::HTTP_ACCEPTED);
     }
@@ -45,7 +41,7 @@ class ServiceController extends Controller
 
     public function destroy($id)
     {
-        $service = Service::find($id);
+        $service = Service::findOrFail($id);
 
         $service->delete();
 

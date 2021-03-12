@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+:root {
+  --main: #0095DA ;
+  --darkblue: #003974;
+  --heading: #4B4B4B;
+  --paragraph: #18191F;
+  --lightgrey: #F9FAFC;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: white;
+  font-family: 'Roboto', serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.btn-custom {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 0;
+  transition: all 1s ease ;
+  cursor: pointer;
+}
+
+.btn-custom-blue {
+  background-color: var(--main);
+  color: white;
+  border-radius: 20px 0;
+}
+
+.btn-custom-blue:hover {
+  color: white;
+  background-color: var(--darkblue);
+}
+
+.btn-custom-blue-border {
+  border: 3px solid var(--main);
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: var(--main);
+  transition: all 0.7s ease;
+}
+
+.btn-custom-blue-border:hover {
+  border: 3px solid var(--main);
+  background-color: var(--main);
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: white;
+}
+
+
+.btn-custom-transparent {
+  color: white;
+}
+
+.btn-custom-transparent:hover {
+  color: white;
+}

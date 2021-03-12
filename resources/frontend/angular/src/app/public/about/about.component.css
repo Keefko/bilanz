@@ -1,0 +1,43 @@
+#about {
+  background-color: var(--lightgrey);
+}
+
+#about .about-section{
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+#about .about-section .about-text {
+  background-color: white;
+  padding: 60px;
+}
+
+#about .about-section .about-text .about-feature{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 40px;
+}
+
+#about .about-section h1 {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 54px;
+  color: black;
+}
+
+
+#about .about-section p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--heading);
+}
+
+
+@media screen  and (max-width: 600px){
+  #about .about-section .about-text .about-feature {
+    padding: 0;
+  }
+}

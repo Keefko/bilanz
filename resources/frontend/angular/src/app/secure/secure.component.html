@@ -1,0 +1,36 @@
+<div class="d-flex" id="wrapper">
+
+  <!-- Sidebar -->
+  <div class="bg-light border-right" id="sidebar-wrapper">
+    <img class="sidebar-heading" src="assets/images/logobilanz.svg">
+    <div class="list-group list-group-flush">
+      <a href="#" class="list-group-item list-group-item-action">Dashboard</a>
+      <a href="#" class="list-group-item list-group-item-action">Shortcuts</a>
+      <a href="#" class="list-group-item list-group-item-action">Overview</a>
+      <a href="#" class="list-group-item list-group-item-action">Events</a>
+      <a href="#" class="list-group-item list-group-item-action">Profile</a>
+      <a href="#" class="list-group-item list-group-item-action">Status</a>
+    </div>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+      <button class="btn btn-custom-blue-border">
+        Menu
+      </button>
+      <div class="ms-auto">
+        <a class="nav-link text-danger" (click)="logout()">Odhlásiť sa</a>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->

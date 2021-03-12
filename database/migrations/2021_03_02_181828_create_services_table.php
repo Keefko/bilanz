@@ -21,6 +21,10 @@ class CreateServicesTable extends Migration
             $table->string('img');
             $table->string('button_text');
             $table->string('button_url');
+            $table->string('slug');
+            $table->boolean('calc');
+            $table->boolean('journey');
+            $table->boolean('others');
         });
     }
 

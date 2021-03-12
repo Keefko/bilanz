@@ -1,0 +1,33 @@
+<nav class="navbar sticky-top navbar-expand-lg bg-white" id="navbar">
+  <div class="container">
+    <img src="assets/images/logobilanz.svg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <ng-container *ngFor="let menu of menus">
+          <ng-container *ngIf="menu.children && menu.children.length > 0">
+            <li class="nav-item dropdown">
+              <a class="nav-link"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{menu.title}}
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li *ngFor="let child of menu.children">
+                  <a class="dropdown-item" routerLink="{{child.link}}">{{child.title}}</a>
+                </li>
+              </ul>
+            </li>
+          </ng-container>
+
+          <ng-container *ngIf="menu.children.length == 0 && menu.parent_id == 0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" routerLink="{{menu.link}}">{{menu.title}}</a>
+            </li>
+          </ng-container>
+        </ng-container>
+      </ul>
+    </div>
+  </div>
+</nav>
+

@@ -1,15 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d4522c9-a291-40dd-90eb-5b75ad92b658" name="Default Changelist" comment="" />
+    <list default="true" id="9d4522c9-a291-40dd-90eb-5b75ad92b658" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/bilanz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bilanz.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/13409480-2db5-4113-b521-ea800d94f9d6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/13409480-2db5-4113-b521-ea800d94f9d6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/JourneyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/JourneyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SectionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SectionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ServiceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ServiceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Journey.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Journey.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Page.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Service.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Service.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_02_181828_create_services_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_02_181828_create_services_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_02_200155_create_journeys_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_02_200155_create_journeys_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -122,6 +161,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1pD7SlP95Kt7U4Ok9cJzFI8ZdAu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -130,9 +170,21 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\xampp\htdocs\bilanz\resources\frontend\angular\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -142,17 +194,73 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1614705808291</updated>
-      <workItem from="1614705809330" duration="7792000" />
+      <workItem from="1614705809330" duration="48115000" />
+      <workItem from="1615196392943" duration="279000" />
+      <workItem from="1615367700799" duration="56546000" />
+      <workItem from="1615542851023" duration="18445000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="322" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614705933089">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="322" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/460.1080.1000.444/1920.0.1920.1080/0.0.1280.680@0.0.1280.680" timestamp="1614705933089" />
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1614848914806">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680/460.1080.1000.504/1920.0.1920.1080@0.0.1280.680" timestamp="1614848914806" />
+    <state width="1293" height="310" key="GridCell.Tab.0.bottom" timestamp="1614845624869">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1293" height="310" key="GridCell.Tab.0.bottom/0.0.1280.680/460.1080.1000.504/1920.0.1920.1080@1920.0.1920.1080" timestamp="1614845624869" />
+    <state width="845" height="163" key="GridCell.Tab.0.bottom/460.1080.1000.444/1920.0.1920.1080/0.0.1280.680@0.0.1280.680" timestamp="1614717726935" />
+    <state width="1293" height="310" key="GridCell.Tab.0.center" timestamp="1614845624869">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1293" height="310" key="GridCell.Tab.0.center/0.0.1280.680/460.1080.1000.504/1920.0.1920.1080@1920.0.1920.1080" timestamp="1614845624869" />
+    <state width="845" height="163" key="GridCell.Tab.0.center/460.1080.1000.444/1920.0.1920.1080/0.0.1280.680@0.0.1280.680" timestamp="1614717726935" />
+    <state width="1293" height="310" key="GridCell.Tab.0.left" timestamp="1614845624868">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1293" height="310" key="GridCell.Tab.0.left/0.0.1280.680/460.1080.1000.504/1920.0.1920.1080@1920.0.1920.1080" timestamp="1614845624868" />
+    <state width="845" height="163" key="GridCell.Tab.0.left/460.1080.1000.444/1920.0.1920.1080/0.0.1280.680@0.0.1280.680" timestamp="1614717726935" />
+    <state width="1293" height="310" key="GridCell.Tab.0.right" timestamp="1614845624869">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1293" height="310" key="GridCell.Tab.0.right/0.0.1280.680/460.1080.1000.504/1920.0.1920.1080@1920.0.1920.1080" timestamp="1614845624869" />
+    <state width="845" height="163" key="GridCell.Tab.0.right/460.1080.1000.444/1920.0.1920.1080/0.0.1280.680@0.0.1280.680" timestamp="1614717726935" />
+    <state x="540" y="218" width="399" height="245" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1614717367239">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="540" y="218" width="399" height="245" key="com.intellij.database.actions.DdlActions$CreateObject$1/460.1080.1000.444/1920.0.1920.1080/0.0.1280.680@0.0.1280.680" timestamp="1614717367239" />
+    <state x="539" y="228" width="312" height="243" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1614718681816">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="539" y="228" width="312" height="243" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/460.1080.1000.444/1920.0.1920.1080/0.0.1280.680@0.0.1280.680" timestamp="1614718681816" />
+    <state x="297" y="151" key="run.anything.popup" timestamp="1614872955494">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="297" y="151" key="run.anything.popup/0.0.1280.680/460.1080.1000.504/1920.0.1920.1080@0.0.1280.680" timestamp="1614872955494" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1615478409381">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/460.1080.1000.504/1920.0.1920.1080@0.0.1280.680" timestamp="1615478409381" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/460.1080.1000.444/1920.0.1920.1080/0.0.1280.680@0.0.1280.680" timestamp="1614717003214" />
   </component>
 </project>

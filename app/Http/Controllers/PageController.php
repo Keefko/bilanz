@@ -9,28 +9,18 @@ use Symfony\Component\HttpFoundation\Response;
 class PageController extends Controller
 {
     public function index(){
-        $pages = Page::all();
-        return response($pages, Response::HTTP_OK);
+        return response(Page::all(), Response::HTTP_OK);
     }
 
     public function show($slug){
-        $page = Page::where('slug', $slug)->first();
-
-        if(!$page){
-            return \response('Stránka nebola nájdená', Response::HTTP_NOT_FOUND);
-        }
-
-        return \response($page, Response::HTTP_OK);
+        return \response(Page::where('slug', $slug)->firstOrFail(), Response::HTTP_OK);
     }
 
     public function store(Request $request){
         $this->validate($request, [
             'title' => 'required'
         ]);
-
-        $page = Page::create($request->only('title', 'img', 'text', 'slug'));
-
-        return response($page, Response::HTTP_CREATED);
+        return response(Page::create($request->all()), Response::HTTP_CREATED);
     }
 
     public function update(Request $request, $id){
@@ -39,14 +29,14 @@ class PageController extends Controller
             'title' => 'required'
         ]);
 
-        $page = Page::find($id);
-        $page->update($request->only('title', 'img', 'text', 'slug'));
+        $page = Page::findOrFail($id);
+        $page->update($request->all());
 
         return response($page, Response::HTTP_ACCEPTED);
     }
 
     public function destroy($id){
-        $page = Page::find($id);
+        $page = Page::findOrFail($id);
         $page->delete();
 
         return \response(null, Response::HTTP_NO_CONTENT);

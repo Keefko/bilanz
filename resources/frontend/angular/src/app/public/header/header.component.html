@@ -1,0 +1,28 @@
+<header id="hero" [ngStyle]="{backgroundImage:'linear-gradient(180deg, rgba(0, 149, 218, 0.8) 70%, rgba(0, 57, 116, 0.8) 100%),url(../assets/images/' + header?.img + ')', backgroundPosition: 'center center', backgroundSize: 'cover', height: '90vh'}">
+
+  <style>
+    #hero{
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      color: white;
+    }
+  </style>
+
+  <div class="masthead container">
+    <div class="row">
+      <div class="col-lg-5 col-md-12">
+        <h1>{{header?.title}}</h1>
+        <p class="mt-4">{{header?.text}}</p>
+        <div class="mt-4">
+          <ng-container *ngIf="header?.button_one_text || header?.button_one_text !==''">
+            <a routerLink="{{header?.button_one_url}}" class="btn btn-custom btn-custom-blue">{{header?.button_one_text}}</a>
+          </ng-container>
+          <ng-container *ngIf="header?.button_two_text || header?.button_two_text !==''">
+            <a routerLink="{{header?.button_two_url}}"  class="btn btn-custom btn-custom-transparent">{{header?.button_two_text}}<img class="p-2" src="assets/images/Arrow%201.svg"></a>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

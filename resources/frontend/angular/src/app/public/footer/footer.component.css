@@ -1,0 +1,23 @@
+footer {
+  background-color: var(--darkblue);
+  padding-top: 40px;
+  padding-bottom: 30px;
+  color: white;
+}
+
+footer i.fab {
+  display: inline-block;
+  border-radius: 60px;
+  background-color: #194673;
+  padding: 0.5em 0.6em;
+  margin-left: 6px;
+}
+
+footer i.fab:hover {
+  background-color: var(--main);
+  cursor: pointer;
+}
+
+footer i::before{
+  color: white;
+}

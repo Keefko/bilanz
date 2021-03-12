@@ -19,4 +19,8 @@ class Service extends Model
     private $img;
     private $button_text;
     private $button_url;
+    private $slug;
+    private $calc;
+    private $journey;
+    private $others;
 }

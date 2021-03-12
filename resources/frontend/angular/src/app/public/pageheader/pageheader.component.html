@@ -1,0 +1,19 @@
+<app-nav></app-nav>
+<header id="page-hero"
+        [ngStyle]="{backgroundImage:'linear-gradient(180deg, rgba(0, 149, 218, 0.8) 70%, rgba(0, 57, 116, 0.8) 100%),url(../assets/images/' + page?.img +')',
+         backgroundPosition: 'center center', backgroundSize: 'cover', height: '70vh'}">
+
+  <style>
+    #page-hero{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      color: white;
+    }
+  </style>
+
+  <div class="masthead">
+    <h1>{{page?.title}}</h1>
+  </div>
+</header>

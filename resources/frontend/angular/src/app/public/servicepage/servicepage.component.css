@@ -1,0 +1,228 @@
+#journey .journey-box{
+  padding-bottom: 15px;
+}
+
+#journey .journey-box .journey-number{
+  width: 72px;
+  height: 72px;
+  background: #F4F5F7;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#journey .journey-box .journey-number h1{
+  padding-top: 10px;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 47px;
+  color: var(--main);
+}
+
+#journey .journey-box .journey-text{
+  margin-left: 15px;
+}
+
+#journey .journey-box .journey-text h1{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--paragraph);
+}
+#journey .journey-box .journey-text p{
+  color: var(--paragraph);
+  font-size: 16px;
+  line-height: 26px;
+}
+
+
+#calc {
+  background-color: var(--lightgrey);
+}
+
+#calc .calc-section,
+#service{
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+#calc .calc-section .calc-blue{
+  background-color: var(--main);
+  padding: 60px;
+}
+
+#calc .calc-section .calc-text{
+  background-color: white;
+  padding: 60px;
+}
+
+#calc .calc-section .calc-blue h1{
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 120%;
+  color: white;
+}
+
+#calc .calc-section .calc-text h2 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 16px;
+}
+#calc .calc-section .calc-text h3 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 16px;
+}
+
+#calc .calc-section .calc-text ul li{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 5px;
+}
+
+#calc .calc-section .calc-text ul li::before {
+  content: "\2022";
+  color: var(--main);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+#calc .calc-section .calc-blue label{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+  color: white;
+}
+
+select {
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+#country {
+  width: 100%;
+  border: 1px solid var(--darkblue);
+  border-radius: 0.25em;
+  padding: 10px 7px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+  cursor: pointer;
+  background-color: var(--darkblue);
+  color: white;
+}
+
+#currencies {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 0.25em;
+  padding: 10px 7px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+#calc .calc-section .calc-blue input{
+  font-size: 16px;
+  font-family: inherit;
+  padding: 10px 7px;
+  background-color: var(--darkblue);
+  border: 2px solid var(--darkblue);
+  color: white;
+  border-radius: 4px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+#others .card-body{
+  padding: 20px;
+
+}
+
+#others .card-body p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--heading);
+}
+
+
+#others .card-body i {
+  color: var(--main);
+  font-size: 28px;
+}
+
+#others .card-body .card-title{
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--heading);
+}
+
+#others .card-body a {
+  font-weight: bold;
+  color: var(--main);
+}
+
+#others .card-body a:hover {
+  color: var(--darkblue);
+}
+
+#others .carousel-indicators li {
+  background: var(--lightgrey);
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+#others .carousel-indicators .active {
+  background: var(--main);
+}
+
+::ng-deep .owl-theme .owl-dots .owl-dot.active span,
+::ng-deep .owl-theme .owl-dots .owl-dot:hover span{
+  background:var(--main) !important;
+}

@@ -1,0 +1,52 @@
+
+#services .services{
+  padding-top: 6vh;
+}
+
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+#services .card-body{
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
+}
+
+#services .card-body p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--heading);
+}
+
+
+#services .card-body i {
+  color: var(--main);
+  font-size: 28px;
+}
+
+#services .card-body .card-title{
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--heading);
+}
+
+#services .card-body a {
+  font-weight: bold;
+  color: var(--main);
+}
+
+#services .card-body a:hover {
+  color: var(--darkblue);
+}

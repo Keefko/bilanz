@@ -10,17 +10,17 @@ use Symfony\Component\HttpFoundation\Response;
 class SectionController extends Controller
 {
     public function index(){
-        $section = Section::all();
-        return response($section, Response::HTTP_OK);
+        return response(Section::all(), Response::HTTP_OK);
     }
 
     public function show($id){
-        $section = Section::find($id);
+        $section = Section::findOrFail($id);
         return response($section, Response::HTTP_OK);
     }
 
     public function update(SectionRequest $request, $id){
-        $section = Section::find($id);
-        $section->update($request->only('img', 'title', 'text', 'button_one_text','button_one_url','button_two_text','button_two_url'));
+        $section = Section::findOrFail($id);
+        $section->update($request->all());
+        return response($section, Response::HTTP_ACCEPTED);
     }
 }
