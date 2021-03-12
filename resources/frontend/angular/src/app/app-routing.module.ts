@@ -13,8 +13,8 @@ import {ContactComponent as AdminContact} from "./secure/contact/contact.compone
 
 const routes: Routes = [
 
-  {path: '', component: PublicComponent, children: [
-      {path: '', redirectTo: 'uvod', pathMatch: 'full'},
+  {path: '/assets/angular', component: PublicComponent, children: [
+      {path: '/assets/angular', redirectTo: 'uvod', pathMatch: 'full'},
       {path: 'uvod' , component: HomepageComponent},
       {path: 'login' , component: LoginComponent},
       {path: 'kontakt', component:  ContactComponent},
